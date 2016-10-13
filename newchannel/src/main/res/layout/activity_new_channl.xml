@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new_channl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="已选频道:"/>
+    <!-- 设置gridlayout改变时有动画-->
+    <GridLayout
+        android:id="@+id/selected_channel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:columnCount="4"></GridLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="未选频道:"/>
+
+    <GridLayout
+        android:animateLayoutChanges="true"
+        android:id="@+id/unSelected_channel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"></GridLayout>
+
+</LinearLayout>
